@@ -4,6 +4,7 @@
 const char *battery_perc(const char *);
 const char *battery_state(const char *);
 const char *battery_remaining(const char *);
+const char *unicode_battery(const char *);
 
 /* cpu */
 const char *cpu_freq(void);
@@ -11,6 +12,7 @@ const char *cpu_perc(void);
 
 /* datetime */
 const char *datetime(const char *fmt);
+const char *unicode_datetime();
 
 /* disk */
 const char *disk_free(const char *path);

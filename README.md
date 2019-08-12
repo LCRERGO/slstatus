@@ -1,5 +1,6 @@
 slstatus - suckless status(Njord build)
 ==========================
+![Njord's Logo](NjordLogo.png)
 slstatus is a suckless status monitor for window managers that use WM_NAME
 (e.g. dwm) or stdin to fill the status bar. This is a custom build of 
 slstatus where it is used in Njord's dwm build. It has custom unicode functions

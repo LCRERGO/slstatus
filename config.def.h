@@ -60,8 +60,13 @@ static const char unknown_str[] = "n/a";
  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
+ *
+ * -- Unicode Functions(default functions with characters)
+ * unicode_datetime    date and time                    NULL
+ * unicode_battery     battery percentage               battery name(BAT0) 
  */
 static const struct arg args[] = {
-	/* function format          argument */
-	{ datetime, "%s",           "%F %T" },
+	/* function             format          argument */
+        { unicode_battery,      " %s",          "BAT0"},
+        { unicode_datetime,     " %s",          NULL},
 };
