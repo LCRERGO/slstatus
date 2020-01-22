@@ -1,0 +1,416 @@
+[
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/swap.o",
+            "components/swap.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/swap.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/ip.o",
+            "components/ip.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/ip.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/keyboard_indicators.o",
+            "components/keyboard_indicators.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/keyboard_indicators.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/entropy.o",
+            "components/entropy.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/entropy.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/run_command.o",
+            "components/run_command.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/run_command.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/uptime.o",
+            "components/uptime.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/uptime.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/disk.o",
+            "components/disk.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/disk.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/wifi.o",
+            "components/wifi.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/wifi.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/datetime.o",
+            "components/datetime.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/datetime.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/kernel_release.o",
+            "components/kernel_release.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/kernel_release.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/user.o",
+            "components/user.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/user.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/ram.o",
+            "components/ram.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/ram.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/temperature.o",
+            "components/temperature.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/temperature.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "slstatus.o",
+            "slstatus.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "slstatus.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/battery.o",
+            "components/battery.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/battery.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/load_avg.o",
+            "components/load_avg.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/load_avg.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/num_files.o",
+            "components/num_files.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/num_files.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/keymap.o",
+            "components/keymap.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/keymap.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/volume.o",
+            "components/volume.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/volume.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/netspeeds.o",
+            "components/netspeeds.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/netspeeds.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "util.o",
+            "util.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "util.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/cpu.o",
+            "components/cpu.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/cpu.c"
+    },
+    {
+        "arguments": [
+            "cc",
+            "-c",
+            "-I/usr/X11R6/include",
+            "-D_DEFAULT_SOURCE",
+            "-std=c99",
+            "-pedantic",
+            "-Wall",
+            "-Wextra",
+            "-Os",
+            "-o",
+            "components/hostname.o",
+            "components/hostname.c"
+        ],
+        "directory": "/home/lucas/Documentos/Compilation/Suckless/slstatus",
+        "file": "components/hostname.c"
+    }
+]

@@ -1,0 +1,10 @@
+# .gitignore
+
+# Compilation configuration file
+config.h
+
+# Remove object files
+*.o
+
+# Binary
+slstatus
