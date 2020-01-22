@@ -158,46 +158,46 @@
 
                 if (!strcmp(symbol, "=")) {
                         /* is full */
-                        return bprintf("\uf584%d%%", perc);
+                        return bprintf("\uf584 %d%%", perc);
                 } else if (!strcmp(symbol, "+")) {
                         /* is charging */
                         if (perc < 100 && perc >= 90) {
-                                return bprintf("\uf58a%d%%", perc);
+                                return bprintf("\uf58a %d%%", perc);
                         } else if (perc < 90 && perc >= 80) {
-                                return bprintf("\uf589%d%%", perc);
+                                return bprintf("\uf589 %d%%", perc);
                         } else if (perc < 80 && perc >= 60) {
-                                return bprintf("\uf588%d%%", perc);
+                                return bprintf("\uf588 %d%%", perc);
                         } else if (perc < 60 && perc >= 40) {
-                                return bprintf("\uf587%d%%", perc);
+                                return bprintf("\uf587 %d%%", perc);
                         } else if (perc < 40 && perc >= 30) {
-                                return bprintf("\uf586%d%%", perc);
+                                return bprintf("\uf586 %d%%", perc);
                         } else {
                                 /* perc < 30 */
-                                return bprintf("\uf585%d%%", perc);
+                                return bprintf("\uf585 %d%%", perc);
                         }                
                 } else if (!strcmp(symbol, "-")) {
                         /* is discharging */
                         if (perc == 100) {
-                                return bprintf("\uf578%d%%", perc);
+                                return bprintf("\uf578 %d%%", perc);
                         } else if (perc < 100 && perc >= 90) {
-                                return bprintf("\uf581%d%%", perc);
+                                return bprintf("\uf581 %d%%", perc);
                         } else if (perc < 90 && perc >= 80) {
-                                return bprintf("\uf580%d%%", perc);
+                                return bprintf("\uf580 %d%%", perc);
                         } else if (perc < 80 && perc >= 70) {
-                                return bprintf("\uf57f%d%%", perc);
+                                return bprintf("\uf57f %d%%", perc);
                         } else if (perc < 70 && perc >= 60) {
-                                return bprintf("\uf57e%d%%", perc);
+                                return bprintf("\uf57e %d%%", perc);
                         } else if (perc < 60 && perc >= 50) {
-                                return bprintf("\uf57d%d%%", perc);
+                                return bprintf("\uf57d %d%%", perc);
                         } else if (perc < 50 && perc >= 40) {
-                                return bprintf("\uf57c%d%%", perc);
+                                return bprintf("\uf57c %d%%", perc);
                         } else if (perc < 40 && perc >= 30) {
-                                return bprintf("\uf57b%d%%", perc);
+                                return bprintf("\uf57b %d%%", perc);
                         } else if (perc < 30 && perc >= 20) {
-                                return bprintf("\uf57a%d%%", perc);
+                                return bprintf("\uf57a %d%%", perc);
                         } else {
                                 /* perc < 20 */
-                                return bprintf("\uf579%d%%", perc);
+                                return bprintf("\uf579 %d%%", perc);
                         }                
                 } else {
                         /* unknown */
