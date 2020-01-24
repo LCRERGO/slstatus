@@ -15,6 +15,8 @@ struct arg {
 	const char *(*func)();
 	const char *fmt;
 	const char *args;
+        const char *background_color;
+        const char *foreground_color;
 };
 
 char buf[1024];
@@ -53,7 +55,7 @@ main(int argc, char *argv[])
 	size_t i, len;
 	int sflag, ret;
 	char status[MAXLEN];
-	const char *res;
+	const char *res, *auxres;
 
 	sflag = 0;
 	ARGBEGIN {
@@ -85,9 +87,15 @@ main(int argc, char *argv[])
 		status[0] = '\0';
 		for (i = len = 0; i < LEN(args); i++) {
 			if (!(res = args[i].func(args[i].args))) {
-				res = unknown_str;
+				auxres = unknown_str;
 			}
-			if ((ret = esnprintf(status + len, sizeof(status) - len,
+                        /*
+                        res = setcolor(auxres, 
+                                args[i].background_color,
+                                args[i].foregroud_color);
+                                */
+			if ((ret = csnprintf(status + len, sizeof(status) - len,
+                                            args[i].background_color, args[i].foreground_color,
 			                    args[i].fmt, res)) < 0) {
 				break;
 			}

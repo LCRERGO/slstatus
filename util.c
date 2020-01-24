@@ -144,3 +144,44 @@ pscanf(const char *path, const char *fmt, ...)
 
 	return (n == EOF) ? -1 : n;
 }
+
+char *
+setcolor(const char *original, const char *bg, const char *fg)
+{
+        /* Sets background and foreground colors based on the value of ground,
+         * colorval must be in the "#RRGGBB"(must be uppercased) format.
+        */
+        char *ret;
+        ret = (char *)malloc(1024 * sizeof(char));
+        
+        if (!bg && !fg) {
+                    strncpy(ret ,original, 1024);
+        } else {
+                if (bg && !fg) {
+                        snprintf(ret, 1024, "^b%s^%s%s", bg, original, "^d^");
+                } else if (!bg && fg) {
+                        snprintf(ret, 1024, "^c%s^%s%s", fg, original, "^d^");
+                } else {
+                        snprintf(ret, 1024, "^b%s^^c%s^%s%s", bg, fg, original, "^d^");
+                }
+        }
+        
+        return ret;
+}
+
+int
+csnprintf(char *str, size_t size, const char *bg, const char *fg,
+        const char *fmt, ...)
+{
+        va_list ap;
+        int ret;
+        char *new_fmt;
+        
+        new_fmt = setcolor(fmt, bg, fg);
+        va_start(ap, fmt);
+        ret = evsnprintf(str, size, new_fmt, ap);
+        va_end(ap);
+        free(new_fmt);
+
+        return ret;
+}

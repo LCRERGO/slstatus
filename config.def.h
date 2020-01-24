@@ -66,7 +66,7 @@ static const char unknown_str[] = "n/a";
  * unicode_battery     battery percentage               battery name(BAT0) 
  */
 static const struct arg args[] = {
-	/* function             format          argument */
-        { unicode_battery,      " %s",          "BAT0"},
-        { unicode_datetime,     " %s",          NULL},
+	/* function             format          argument    bg          fg */
+        { unicode_battery,      " %s ",         "BAT0",   "#3B4252",    NULL     },
+        { unicode_datetime,     " %s ",         NULL,     "#8FBCBB",    "#D8DEE9"},
 };
