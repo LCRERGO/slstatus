@@ -175,13 +175,13 @@ csnprintf(char *str, size_t size, const char *bg, const char *fg,
 {
         va_list ap;
         int ret;
-        char *new_fmt;
+        char *color_fmt;
         
-        new_fmt = setcolor(fmt, bg, fg);
+        color_fmt = setcolor(fmt, bg, fg);
         va_start(ap, fmt);
-        ret = evsnprintf(str, size, new_fmt, ap);
+        ret = evsnprintf(str, size, color_fmt, ap);
         va_end(ap);
-        free(new_fmt);
+        free(color_fmt);
 
         return ret;
 }

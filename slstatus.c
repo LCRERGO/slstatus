@@ -55,7 +55,7 @@ main(int argc, char *argv[])
 	size_t i, len;
 	int sflag, ret;
 	char status[MAXLEN];
-	const char *res, *auxres;
+	const char *res;
 
 	sflag = 0;
 	ARGBEGIN {
@@ -87,13 +87,8 @@ main(int argc, char *argv[])
 		status[0] = '\0';
 		for (i = len = 0; i < LEN(args); i++) {
 			if (!(res = args[i].func(args[i].args))) {
-				auxres = unknown_str;
+				res = unknown_str;
 			}
-                        /*
-                        res = setcolor(auxres, 
-                                args[i].background_color,
-                                args[i].foregroud_color);
-                                */
 			if ((ret = csnprintf(status + len, sizeof(status) - len,
                                             args[i].background_color, args[i].foreground_color,
 			                    args[i].fmt, res)) < 0) {
