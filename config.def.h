@@ -62,11 +62,18 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  *
  * -- Unicode Functions(default functions with characters)
- * unicode_datetime    date and time                    NULL
- * unicode_battery     battery percentage               battery name(BAT0) 
+ * ubattery     battery percentage               battery name(BAT0) 
+ * ucpu_freq    cpu frequency in MHz             NULL
+ * udatetime    date and time                    NULL
+ * uram_perc    memory usage in percent          NULL
+ * uwifi_perc   WiFi signal in percent           interface name (wlan0)
  */
 static const struct arg args[] = {
 	/* function             format          argument    bg          fg */
-        { unicode_battery,      " %s ",         "BAT0",   "#3B4252",    NULL     },
-        { unicode_datetime,     " %s ",         NULL,     "#8FBCBB",    "#D8DEE9"},
+        { uwifi_perc,           " %s",          "wlp2s0",  "#B48EAD",   "#D8DEE9" },
+        { ipv4,                 " %s ",         "wlp2s0",  "#B48EAD",   "#D8DEE9" },
+        { ucpu_perc,            " %s ",         NULL,      "#EBCB8B",   "#2E3440" },
+        { uram_perc,            " %s ",         NULL,      "#BF616A",   "#D8DEE9" },
+        { ubattery,             " %s ",         "BAT0",    "#3B4252",   "#D8DEE9" },
+        { udatetime,            " %s ",         NULL,      "#8FBCBB",   "#D8DEE9" },
 };

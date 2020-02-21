@@ -76,6 +76,29 @@
 		return fmt_human((total - free - buffers - cached) * 1024,
 		                 1024);
 	}
+
+	const char *
+	uram_perc(void)
+	{
+		uintmax_t total, free, buffers, cached;
+
+		if (pscanf("/proc/meminfo",
+		           "MemTotal: %ju kB\n"
+		           "MemFree: %ju kB\n"
+		           "MemAvailable: %ju kB\n"
+		           "Buffers: %ju kB\n"
+		           "Cached: %ju kB\n",
+		           &total, &free, &buffers, &buffers, &cached) != 5) {
+			return NULL;
+		}
+
+		if (total == 0) {
+			return NULL;
+		}
+
+		return bprintf("\uf085 %d%%", 
+                        100 * ((total - free) - (buffers + cached)) / total);
+	}
 #elif defined(__OpenBSD__)
 	#include <stdlib.h>
 	#include <sys/sysctl.h>

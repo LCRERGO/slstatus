@@ -117,7 +117,7 @@
 	}
 
         const char *
-        unicode_battery(const char *bat)
+        ubattery(const char *bat)
         {
                 static struct {
                         char *state;

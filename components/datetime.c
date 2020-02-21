@@ -20,7 +20,7 @@ datetime(const char *fmt)
 }
 
 const char *
-unicode_datetime()
+udatetime()
 {
         time_t t;
         t = time(NULL);
