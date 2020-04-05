@@ -17,6 +17,7 @@ COM =\
 	components/keyboard_indicators\
 	components/keymap\
 	components/load_avg\
+	components/media\
 	components/netspeeds\
 	components/num_files\
 	components/ram\

@@ -163,7 +163,7 @@ setcolor(const char *original, const char *bg, const char *fg)
          * colorval must be in the "#RRGGBB"(must be uppercased) format.
         */
         char *ret;
-        ret = (char *)malloc(1024 * sizeof(char));
+        ret = (char *)malloc(1024);
         
         if (!bg && !fg) {
                     strncpy(ret ,original, 1024);

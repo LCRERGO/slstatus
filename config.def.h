@@ -81,6 +81,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function             format          argument    bg          fg */
+        { media_mpd_stat,       " %s",          NULL,      "#A3BE8C",   "#D8DEE9" },
         { uwifi_perc,           " %s",          "wlp2s0",  "#B48EAD",   "#D8DEE9" },
         { ipv4,                 " %s ",         "wlp2s0",  "#B48EAD",   "#D8DEE9" },
         { ucpu_perc,            " %s ",         NULL,      "#EBCB8B",   "#2E3440" },

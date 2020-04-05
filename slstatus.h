@@ -54,6 +54,9 @@ const char *keymap(void);
 /* load_avg */
 const char *load_avg(void);
 
+/* media */
+const char *media_mpd_stat(void);
+
 /* netspeeds */
 const char *netspeed_rx(const char *interface);
 const char *netspeed_tx(const char *interface);
