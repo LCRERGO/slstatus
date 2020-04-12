@@ -10,7 +10,7 @@ media_mpd_stat()
         struct mpd_connection *conn;
         struct mpd_status *status;
         struct mpd_song *song;
-        char *title, *artist;
+        char *title;
         char *ret;
         int elapsed, total;
 
@@ -28,16 +28,12 @@ media_mpd_stat()
                 mpd_response_next(conn);
                 song = mpd_recv_song(conn);
                 title = (char *)mpd_song_get_tag(song, MPD_TAG_TITLE, 0);
-                artist = (char *)mpd_song_get_tag(song, MPD_TAG_ARTIST, 0);
                 elapsed = mpd_status_get_elapsed_time(status);
                 total = mpd_status_get_total_time(status);
-                mpd_song_free(song);
-                snprintf(ret, 128, "%.2d:%.2d/%.2d:%.2d %s - %s",
-                        elapsed / 60, elapsed %60,
-                        total / 60, total %60,
-                        artist, title);
+                snprintf(ret, 128, "%s (%.2d:%.2d/%.2d:%.2d)",
+                        title, elapsed / 60, elapsed %60,
+                        total / 60, total %60);
                 free(title);
-                free(artist);
         } else {
                 return NULL;
         }
