@@ -23,6 +23,7 @@ Features
 - Keyboard indicators
 - Keymap
 - Load average
+- MPD music helper
 - Network speeds (RX and TX)
 - Number of files in a directory (hint: Maildir)
 - Memory status (free memory, percentage, total memory and used memory)
