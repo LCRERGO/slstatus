@@ -96,7 +96,7 @@
 			return NULL;
 		}
 
-		return bprintf("\uf085 %d%%", 
+		return bprintf("\uf085 %2d%%", 
                         100 * ((total - free) - (buffers + cached)) / total);
 	}
 #elif defined(__OpenBSD__)

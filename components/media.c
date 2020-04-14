@@ -54,7 +54,7 @@ media_mpd_stat()
                         if ((song = mpd_recv_song(conn))) {
                             title = (char *)mpd_song_get_tag(song,
                                     MPD_TAG_TITLE, 0);
-                            snprintf(ret, 128, "\uf28e %s ", title);
+                            snprintf(ret, 128, "\ue374 %s ", title);
                             free(title);
                         } else {
                             snprintf(ret, 128, "\uf28e ");
