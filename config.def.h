@@ -81,11 +81,11 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function             format          argument    bg          fg */
-        { media_mpd_stat,       " %s",          NULL,      "#A3BE8C",   "#D8DEE9" },
+        { media_mpd_stat,       " %s",          NULL,      "#A3BE8C",   "#2E3440" },
         { uwifi_perc,           " %s",          "wlp2s0",  "#B48EAD",   "#D8DEE9" },
         { ipv4,                 " %s ",         "wlp2s0",  "#B48EAD",   "#D8DEE9" },
         { ucpu_perc,            " %s ",         NULL,      "#EBCB8B",   "#2E3440" },
         { uram_perc,            " %s ",         NULL,      "#BF616A",   "#D8DEE9" },
         { ubattery,             " %s ",         "BAT0",    "#3B4252",   "#D8DEE9" },
-        { udatetime,            " %s ",         NULL,      "#8FBCBB",   "#D8DEE9" },
+        { udatetime,            " %s ",         NULL,      "#8FBCBB",   "#2E3440" },
 };
