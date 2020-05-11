@@ -8,7 +8,7 @@
 void
 format_title(char *title, const char *mpd_title, size_t n)
 {
-        if (strlen(mpd_title) > n) {
+        if (strlen(mpd_title) >= n) {
                 strncpy(title, mpd_title, n - 4);
                 memset(title + n - 4, '.', 3);
                 title[n] = '\0';

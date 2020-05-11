@@ -25,12 +25,12 @@ udatetime()
         time_t t;
         t = time(NULL);
 
-	if (!strftime(buf, sizeof(buf), "\uf455 %d/%m/%y ", localtime(&t))) {
+	if (!strftime(buf, sizeof(buf), "\uf455 %x ", localtime(&t))) {
 		warn("strftime: Result string exceeds buffer size");
 		return NULL;
 	}
 
-        if (!strftime(buf + strlen(buf), sizeof(buf), "\uf64f %H:%M", localtime(&t))){
+        if (!strftime(buf + strlen(buf), sizeof(buf), "\uf64f %R", localtime(&t))){
 		warn("strftime: Result string exceeds buffer size");
                 return NULL;
         }
